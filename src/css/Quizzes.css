@@ -1,0 +1,192 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Title styling */
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    text-align: left;
+    font-size: 0.95rem;
+  }
+  
+  table th {
+    background-color: #34495e;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Buttons styling */
+  button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+  }
+  
+  button.play {
+    background-color: #27ae60;
+    color: #ffffff;
+  }
+  
+  button.play.disabled {
+    background-color: #e74c3c;
+    color: #ffffff;
+    cursor: not-allowed;
+  }
+  
+  button.back {
+    background-color: #3498db;
+    color: #ffffff;
+  }
+  
+  button.like {
+    background-color: #2ecc71;
+    color: #ffffff;
+  }
+  
+  button.unlike {
+    background-color: #e74c3c;
+    color: #ffffff;
+  }
+  
+  /* Notification styling */
+  .notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px 25px;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .notification button {
+    margin-left: 15px;
+    background: none;
+    border: none;
+    color: #721c24;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Completed quiz styling */
+  .quiz-completed {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .quiz-completed h2 {
+    color: #2ecc71;
+    font-size: 1.8rem;
+  }
+  
+  .quiz-completed p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Responsive table */
+  @media (max-width: 768px) {
+    table th,
+    table td {
+      font-size: 0.85rem;
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 0.85rem;
+      padding: 8px 12px;
+    }
+  }
+  
+  /* Extra for hover effects */
+  table td button:hover:not(.disabled),
+  table td button:active:not(.disabled) {
+    background-color: #16a085;
+  }
+  
+  table td button.play.disabled:hover,
+  table td button.play.disabled:active {
+    background-color: #e74c3c;
+  }
+
+/* Quiz Header Logo Styling */
+.quiz-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .quiz-logo {
+    width: 150px; /* Adjust the size of your logo */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the logo scales properly */
+    border: none; /* Remove any border */
+    background-color: transparent; /* No background color */
+  }
+  
+  
+  

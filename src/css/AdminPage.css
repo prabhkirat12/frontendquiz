@@ -1,0 +1,127 @@
+/* Navigation bar container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space out links and logout button */
+    align-items: center;
+    background-color: #007bff; /* Blue background */
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better depth */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Links container */
+.navbar-links {
+    list-style-type: none; /* Remove bullets */
+    display: flex;
+    gap: 15px; /* Space between nav items */
+    margin: 0;
+    padding: 0;
+}
+
+/* Individual nav button */
+.nav-btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* General button hover effects */
+.nav-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Quizzes button */
+.nav-btn.quizzes-btn {
+    background-color: #28a745; /* Green */
+}
+
+.nav-btn.quizzes-btn:hover {
+    background-color: #218838; /* Darker green */
+}
+
+/* Users button */
+.nav-btn.users-btn {
+    background-color: #17a2b8; /* Teal */
+}
+
+.nav-btn.users-btn:hover {
+    background-color: #138496; /* Darker teal */
+}
+
+/* Create Quiz button */
+.nav-btn.create-quiz-btn {
+    background-color: #ffc107; /* Yellow */
+    color: black; /* Dark text for better contrast */
+}
+
+.nav-btn.create-quiz-btn:hover {
+    background-color: #e0a800; /* Darker yellow */
+}
+
+/* Back to Dashboard button */
+.nav-btn.btn-secondary {
+    background-color: #6c757d; /* Gray */
+}
+
+.nav-btn.btn-secondary:hover {
+    background-color: #5a6268; /* Darker gray */
+}
+
+/* Logout button */
+.logout-btn {
+    background-color: #dc3545; /* Red */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c82333; /* Darker red */
+    transform: scale(1.05);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack links and logout button vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .navbar-links {
+        flex-direction: column; /* Stack navigation items vertically */
+        width: 100%; /* Take full width */
+        margin-bottom: 10px; /* Add some spacing below links */
+    }
+
+    .nav-btn {
+        width: 100%; /* Make buttons take full width */
+        text-align: center; /* Center the text in buttons */
+        padding: 12px 0; /* Adjust padding for better touch experience */
+    }
+
+    .logout-btn {
+        width: 100%; /* Make logout button take full width */
+        margin-top: 10px; /* Add space above logout button */
+        text-align: center; /* Center the text in logout button */
+    }
+}
+
+/* Box shadow for hover on all buttons */
+.nav-btn:hover,
+.logout-btn:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

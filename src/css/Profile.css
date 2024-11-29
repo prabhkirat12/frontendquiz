@@ -1,0 +1,36 @@
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    div {
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+  
+    button {
+      padding: 8px 12px;
+      font-size: 0.8rem;
+    }
+  
+    .form-control {
+      font-size: 0.85rem;
+      padding: 8px;
+    }
+  }
+
+  /* Profile Header Logo Styling */
+.profile-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-logo {
+    width: 100px; /* Adjust the size of your logo */
+    height: 100px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures the logo scales properly */
+    border: 3px solid #2c3e50; /* Optional border */
+    background-color: #ffffff; /* Optional background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+  }
+  

@@ -1,0 +1,109 @@
+/* General dashboard container */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Navigation bar styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Space out nav links and logout */
+    align-items: center;
+    background-color: #007bff; /* Blue background */
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+  /* Navigation links */
+  .navbar-links {
+    list-style-type: none; /* Remove bullets */
+    display: flex;
+    gap: 15px; /* Space between nav items */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white; /* White text for nav links */
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .active-link {
+    background-color: #ffc107; /* Highlight active link */
+    color: black; /* Black text for better contrast */
+  }
+  
+  /* Logout button styling */
+  .logout-button {
+    margin-left: auto; /* Push the logout button to the far right */
+  }
+  
+  .logout-button button {
+    background-color: #dc3545; /* Red background */
+    color: white; /* White text */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button button:hover {
+    background-color: #c82333; /* Darker red */
+  }
+  
+  /* Welcome section styling */
+  .welcome-section {
+    text-align: center; /* Center the welcome text */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-message {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333; /* Dark text */
+    font-family: "Georgia", serif; /* Cool font style */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add slight shadow */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start;
+    }
+  
+    .logout-button {
+      margin-left: 0;
+      margin-top: 10px;
+      align-self: flex-end; /* Align logout button to the right in stacked layout */
+    }
+  
+    .navbar-links {
+      width: 100%; /* Spread navbar links across full width */
+      justify-content: space-around;
+    }
+  
+    .welcome-message {
+      font-size: 1.5rem; /* Reduce font size on smaller screens */
+    }
+  }
+  
