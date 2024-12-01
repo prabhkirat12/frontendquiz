@@ -36,7 +36,7 @@ const AppContent = () => {
 
   const handleLogin = async (username, password) => {
     try {
-      const response = await axios.post("http://localhost:8080/users/auth/login", {
+      const response = await axios.post("/users/auth/login", {
         username,
         password,
       });
