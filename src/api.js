@@ -16,7 +16,7 @@ const decodeHtmlEntities = (text) => {
 };
 
 // Set the base URL for all requests
-axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL || "https://quiz-backend.onrender.com";
+axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL || "https://quiz-backend-vz42.onrender.com";
 
 
 // Add a response interceptor to decode HTML entities
